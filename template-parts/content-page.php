@@ -17,7 +17,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wpbootscore' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wpbootscore3' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -29,7 +29,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'wpbootscore' ),
+						esc_html__( 'Edit %s', 'wpbootscore3' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

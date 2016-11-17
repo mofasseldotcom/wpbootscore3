@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function wpbootscore_body_classes( $classes ) {
+function wpbootscore3_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -26,14 +26,14 @@ function wpbootscore_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'wpbootscore_body_classes' );
+add_filter( 'body_class', 'wpbootscore3_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function wpbootscore_pingback_header() {
+function wpbootscore3_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
 	}
 }
-add_action( 'wp_head', 'wpbootscore_pingback_header' );
+add_action( 'wp_head', 'wpbootscore3_pingback_header' );
