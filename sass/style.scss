@@ -1,6 +1,6 @@
 /*!
 Theme Name: WPBootScore
-Theme URI: http://wpbootscore3.dev
+Theme URI: http://wpbootscore.lh
 Author: Md Mofassel Hossain
 Author URI: http://bootscore.com
 Description: A custom starter WP Theme Framework
@@ -23,7 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
 # Elements
 # Forms
@@ -44,11 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
 
 /*--------------------------------------------------------------
 # Typography
