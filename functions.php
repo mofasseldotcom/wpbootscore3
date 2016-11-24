@@ -149,3 +149,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * // Register Custom Navigation Walker
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+/**
+ * // Register Custom Post Types
+ */
+require get_template_directory() . '/inc/post-type/cpt-functions.php';
