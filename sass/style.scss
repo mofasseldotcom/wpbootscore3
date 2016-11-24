@@ -40,7 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-
+# Footer
 
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -101,4 +101,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
-
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "layout/footer";

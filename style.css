@@ -39,7 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-
+# Footer
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -522,5 +522,16 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background: black none repeat scroll 0 0;
+  color: white;
+  padding: 30px; }
+
+.site-footer a {
+  color: #bbb; }
 
 /*# sourceMappingURL=style.css.map */
