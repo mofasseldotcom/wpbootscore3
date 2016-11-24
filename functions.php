@@ -105,6 +105,7 @@ function wpbootscore3_scripts() {
 	wp_enqueue_style( 'wpbootscore3-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('wpbootscore3-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_style('wpbootscore3-fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css');
 	
 
 	wp_enqueue_script( 'wpbootscore3-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7', true );
