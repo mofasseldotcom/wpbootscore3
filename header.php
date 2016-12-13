@@ -58,3 +58,6 @@
 	<div id="content" class="site-content">
 	<div class="container">
 		<div class="row">
+		<div class="col-sm-12">
+			<?php echo bootscore_breadcrumbs(); ?>
+		</div>

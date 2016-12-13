@@ -59,6 +59,21 @@ function wpbootscore3_setup() {
 		'caption',
 	) );
 
+	/*
+	 * Enable support for Post Formats.
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside',
+		'image',
+		'video',
+		'quote',
+		'link',
+		'gallery',
+		'status',
+		'audio',
+		'chat',
+	) );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'wpbootscore3_custom_background_args', array(
 		'default-color' => 'ffffff',
@@ -146,11 +161,21 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * // Register Custom Navigation Walker
+ * Register Custom Navigation Walker
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 /**
- * // Register Custom Post Types
+ * Register Custom Post Types
  */
 require get_template_directory() . '/inc/post-type/cpt-functions.php';
+
+/**
+ * Metabox support added
+ */
+require get_template_directory() . '/inc/metaboxes/cmb-functions.php';
+
+/**
+ * Breadcrumbs support added
+ */
+require get_template_directory() . '/inc/breadcrumbs.php';
