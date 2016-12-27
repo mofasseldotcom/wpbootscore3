@@ -1,0 +1,87 @@
+/*Header CSS*/
+#site-navigation.main-navigation {
+	margin-bottom: 0;
+}
+/*Slider CSS*/
+.carousel-control.left,
+.carousel-control.right {
+	background: transparent;
+}
+.carousel-control.left .fa-angle-left, 
+.carousel-control.right .fa-angle-right {
+  margin-top: -45px;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+}
+.carousel-control.left:hover .fa-angle-left, 
+.carousel-control.right:hover .fa-angle-right {
+  opacity: 1;
+}
+.carousel-inner .item img {
+  width: 100%;
+  height: auto;
+}
+/*Content CSS*/
+section {
+  padding: 30px 0px;
+}
+.graybg {
+  background: #f5f5f5;
+  color: #000000;
+}
+.graybg h2 {
+  color: #000000;
+}
+.blackbg {
+  background: #000000;
+  color: #FFFFFF;
+}
+.blackbg h2 {
+  color: #FFFFFF;
+}
+
+/*Service Section CSS*/
+section#services article.service-item {
+  border: 1px solid #cecece;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*Portfolio Section CSS*/
+.portfolio-filter ul {
+  width: 100%;
+  text-align: center;
+}
+.portfolio-filter li {
+  display: inline-block;
+  float: none;
+  padding: 10px;
+  cursor: pointer;
+}
+section#portfolio #portfolio-items .portfolio-item{
+  display: none;
+}
+
+/*Secondary Aside CSS*/
+.widget-area .widget li {
+  list-style: none;
+}
+.widget-area .widget li a {
+  color: white;
+}
+/*Footer CSS*/
+section#footer-top {
+  background: #000;
+  color: white;
+}
+.site-info .copyright-info {
+  padding: 15px 0;
+}
+#footer-links.site-links li a {
+	color: #000000;
+}
+#footer-links.site-links li a:hover {
+	background: transparent;
+}

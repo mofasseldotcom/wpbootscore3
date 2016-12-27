@@ -53,6 +53,9 @@
 		        ?>
 		    </div>
 		</nav><!-- #site-navigation -->
+
+		<?php get_template_part('template-parts/tp-slide'); ?>
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

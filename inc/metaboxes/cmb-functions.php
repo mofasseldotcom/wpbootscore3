@@ -22,3 +22,4 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2/init.php' ) ) {
  * All metaboxes are included here as separate file
  */
 require_once dirname( __FILE__ ) . '/cmb-service.php';
+require_once dirname( __FILE__ ) . '/cmb-testimonial.php';

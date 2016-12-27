@@ -42,6 +42,11 @@ function wpbootscore3_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'slide_img', 1200, 400, true );
+	add_image_size( 'brand_img', 320, 230, true );
+	add_image_size( 'portfolio_img', 265, 200, true );
+	
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'wpbootscore3' ),
@@ -121,9 +126,16 @@ function wpbootscore3_scripts() {
 
 	wp_enqueue_style('wpbootscore3-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
 	wp_enqueue_style('wpbootscore3-fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css');
+	wp_enqueue_style('wpbootscore3-carousel', get_template_directory_uri() . '/css/owl.carousel.css');
+	wp_enqueue_style('wpbootscore3-owl-theme', get_template_directory_uri() . '/css/owl.theme.css');
+
+	wp_enqueue_style('wpbootscore3-custom', get_template_directory_uri() . '/custom.css');
 	
 
 	wp_enqueue_script( 'wpbootscore3-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7', true );
+	wp_enqueue_script( 'wpbootscore3-mixitup', get_template_directory_uri() . '/js/jquery.mixitup.min.js', array(), '3.3.7', true );
+	wp_enqueue_script( 'wpbootscore3-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), '3.3.7', true );
+	wp_enqueue_script( 'wpbootscore3-custom', get_template_directory_uri() . '/js/custom.js', array(), '3.3.7', true );
 
 	wp_enqueue_script( 'wpbootscore3-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -179,3 +191,26 @@ require get_template_directory() . '/inc/metaboxes/cmb-functions.php';
  * Breadcrumbs support added
  */
 require get_template_directory() . '/inc/breadcrumbs.php';
+
+/**
+ * Shortcode support added
+ */
+require get_template_directory() . '/inc/shortcodes/sc-functions.php';
+
+
+function portflio_filter_set_to_post_class($classes){
+	// echo "Shahin";
+
+	$terms = get_the_terms(get_the_ID(), 'wpbs_portflio_filter');
+
+	if (!empty($terms)) :
+		foreach ($terms as $term) {
+			$classes[] = $term->slug;
+		}
+	endif;
+
+	return $classes;
+}
+add_action('post_class', 'portflio_filter_set_to_post_class');
+
+
