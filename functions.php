@@ -197,6 +197,11 @@ require get_template_directory() . '/inc/breadcrumbs.php';
  */
 require get_template_directory() . '/inc/shortcodes/sc-functions.php';
 
+/**
+ * Option tree support added
+ */
+require get_template_directory() . '/inc/admin/ot-functions.php';
+
 
 function portflio_filter_set_to_post_class($classes){
 	// echo "Shahin";

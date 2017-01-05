@@ -64,3 +64,19 @@
 		<div class="col-sm-12">
 			<?php echo bootscore_breadcrumbs(); ?>
 		</div>
+
+
+
+
+
+	<?php $otshow = ot_get_option('custom-id'); 
+		if ( $otshow ==  "off") {
+	?>
+
+	<style>
+		#services {
+			display: none;
+		}
+	</style>
+
+	<?php } ?>
